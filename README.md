@@ -1,7 +1,8 @@
 # JavaScript Code Record
-记录整理常用JavaScript代码
+概述：记录整理常用JavaScript代码
 
-1.将对象数组按照传入的属性值进行分组
+## 1.将对象数组按照传入的属性值进行分组
+```javascript
 function groupBy(array, f) {
     const groups = {};
     array.forEach(function (o) {
@@ -13,8 +14,11 @@ function groupBy(array, f) {
         return groups[group];
     });
 }
+```
 
 使用方法示例：
+```javascript
 const sorted = groupBy(data, function (item) {
     return [item.name]
 });
+```
