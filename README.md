@@ -23,3 +23,21 @@ const sorted = groupBy(data, function (item) {
     return [item.name]
 });
 ```
+
+### 2.字符串与数组的相互转换
+```javascript
+// 数组转字符串
+array.join(',')
+// 字符串转数组
+string.split(',')
+```
+
+### 3.求两个数组的并、交、差
+```javascript
+// 并集
+let union = a.concat(b.filter(v => !a.includes(v))) // [1,2,3,4,5]
+// 交集
+let intersection = a.filter(v => b.includes(v)) // [2]
+// 差集
+let difference = a.concat(b).filter(v => a.includes(v) && !b.includes(v)) // [1,3]
+```
