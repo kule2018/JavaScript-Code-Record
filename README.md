@@ -43,7 +43,7 @@ let difference = a.concat(b).filter(v => a.includes(v) && !b.includes(v)) // [1,
 ```
 ### 4.for-in语句的使用
 ```javascript
-//for-in语句是一种精准的迭代语句可以用来美枚举对象的属性
+//for-in语句是一种精准的迭代语句可以用来枚举对象的属性
 for(let propName in window) {
     document.wirte(propName)
 }
