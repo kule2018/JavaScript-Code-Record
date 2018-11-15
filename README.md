@@ -50,7 +50,7 @@ for(let propName in window) {
 }
 ```
 
-### 5.数组的深拷贝
+### 5.数组的深拷贝(一度的深拷贝)
 ```javascript
 //concat(arr1,arr2,...,arrn) 方法用于连接两个或多个数组。
 //该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
@@ -58,6 +58,9 @@ array.concat();
 
 //slice(start,end)方法返回一个新的数组，该方法可从已有的数组中返回选定的元素
 array.slice(0,array.length);
+
+//ES6新方法
+let [...arr1] = arr;
 ```
 
 ### 6.数组的插入、删除和替换
@@ -90,4 +93,9 @@ array.reduce/reduceRight(function(prev,cur,index,array){
 //作用
 reduce():从第一项开始迭代数组的所有项，构建一个最终返回的值。
 reduceRight():从最后一项开始迭代数组的所有项，构建一个最终返回的值。
+```
+
+### 8.对象的深拷贝(一度的深拷贝)
+```javascript
+
 ```
