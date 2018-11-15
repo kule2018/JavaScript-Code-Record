@@ -52,7 +52,11 @@ for(let propName in window) {
 
 ### 5.数组的深拷贝
 ```javascript
+//concat(arr1,arr2,...,arrn) 方法用于连接两个或多个数组。
+//该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
 array.concat();
+
+//slice(start,end)方法返回一个新的数组，该方法可从已有的数组中返回选定的元素
 array.slice(0,array.length);
 ```
 
