@@ -99,3 +99,13 @@ reduceRight():从最后一项开始迭代数组的所有项，构建一个最终
 ```javascript
 
 ```
+
+### 9.两数组对比去重
+```javascript
+let a=[1,2,3,4], b=[1,2,3,5,4,6],
+c = [...a, ...b],
+d = new Set(c),
+e = Array.from(d),
+f = [...e.filter(_=>!a.includes(_)),...e.filter(_=>!b.includes(_))]；
+console.log(f);//[5, 6]
+```
